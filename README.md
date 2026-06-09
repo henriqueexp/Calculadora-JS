@@ -9,13 +9,13 @@ A calculadora realiza as operações de soma, subtração, multiplicação e div
 Foram utilizados conceitos de HTML para estrutura da página, CSS para estilização e JavaScript para implementar a lógica das operações matemáticas.
 
 ## Soma
-![Soma](imagens/soma.png)
+![Soma](imagens/Soma.png)
 
 ## Subtração
-![Subtração](imagens/subtracao.png)
+![Subtração](imagens/Subtração.png)
 
 ## Multiplicação
-![Multiplicação](imagens/multiplicacao.png)
+![Multiplicação](imagens/Multiplicação.png)
 
 ## Divisão
-![Divisão](imagens/divisao.png)
+![Divisão](imagens/Divisão.png)
