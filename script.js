@@ -1,3 +1,4 @@
+// Calculadora JS
 const display = document.getElementById("display");
 
 function adicionar(valor){
