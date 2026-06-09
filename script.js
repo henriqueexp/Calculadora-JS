@@ -1,31 +1,37 @@
-function somar() {
-    let n1 = Number(document.getElementById("num1").value);
-    let n2 = Number(document.getElementById("num2").value);
+const display = document.getElementById("display");
 
-    document.getElementById("resultado").textContent =
-        "Resultado: " + (n1 + n2);
+function adicionar(valor){
+    display.value += valor;
 }
 
-function subtrair() {
-    let n1 = Number(document.getElementById("num1").value);
-    let n2 = Number(document.getElementById("num2").value);
-
-    document.getElementById("resultado").textContent =
-        "Resultado: " + (n1 - n2);
+function limpar(){
+    display.value = "";
+    display.style.color = "black";
 }
 
-function multiplicar() {
-    let n1 = Number(document.getElementById("num1").value);
-    let n2 = Number(document.getElementById("num2").value);
+function calcular(){
 
-    document.getElementById("resultado").textContent =
-        "Resultado: " + (n1 * n2);
-}
+    try{
 
-function dividir() {
-    let n1 = Number(document.getElementById("num1").value);
-    let n2 = Number(document.getElementById("num2").value);
+        const expressao = display.value;
 
-    document.getElementById("resultado").textContent =
-        "Resultado: " + (n1 / n2);
+        let resultado = eval(expressao);
+
+        display.value = expressao + " = " + resultado;
+
+        if(resultado > 0){
+            display.style.color = "green";
+        }
+        else if(resultado < 0){
+            display.style.color = "red";
+        }
+        else{
+            display.style.color = "black";
+        }
+
+    }
+    catch{
+        display.value = "Erro";
+        display.style.color = "red";
+    }
 }

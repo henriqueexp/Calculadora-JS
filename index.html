@@ -2,28 +2,45 @@
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculadora</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <div class="calculadora">
-        <h1>Calculadora</h1>
+<div class="calculadora">
 
-        <input type="number" id="num1" placeholder="Primeiro número">
+    <input type="text" id="display" readonly>
 
-        <input type="number" id="num2" placeholder="Segundo número">
+    <div class="botoes">
+        <button onclick="limpar()">C</button>
+        <button onclick="limpar()">CE</button>
+        <button onclick="adicionar('/')">÷</button>
+        <button onclick="adicionar('*')">×</button>
 
-        <button onclick="somar()">Somar</button>
-        <button onclick="subtrair()">Subtrair</button>
-        <button onclick="multiplicar()">Multiplicar</button>
-        <button onclick="dividir()">Dividir</button>
+        <button onclick="adicionar('7')">7</button>
+        <button onclick="adicionar('8')">8</button>
+        <button onclick="adicionar('9')">9</button>
+        <button onclick="adicionar('-')">-</button>
 
-        <h2 id="resultado">Resultado: </h2>
+        <button onclick="adicionar('4')">4</button>
+        <button onclick="adicionar('5')">5</button>
+        <button onclick="adicionar('6')">6</button>
+        <button onclick="adicionar('+')">+</button>
+
+        <button onclick="adicionar('1')">1</button>
+        <button onclick="adicionar('2')">2</button>
+        <button onclick="adicionar('3')">3</button>
+
+        <button class="igual" onclick="calcular()">=</button>
+
+        <button class="zero" onclick="adicionar('0')">0</button>
+        <button onclick="adicionar('.')">.</button>
+
     </div>
 
-    <script src="script.js"></script>
+</div>
+
+<script src="script.js"></script>
 
 </body>
 </html>
